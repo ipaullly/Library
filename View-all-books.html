@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <title>Enter Login Details</title>
@@ -20,10 +20,25 @@
         </script>
 <style>
     body {font-family: Arial, Helvetica, sans-serif;}
-    
+.resize {
+    width: 200px;
+    height: 120px;
+}
+
+/* resize images */
+.resize img {
+    width: 100%;
+    height: auto;
+    padding: 25px;
+    margin: 10px;
+
+}    
 .topnav {
   overflow: hidden;
-  background-color:olive;
+  background-color:#F05837;
+}
+.splash {
+  background-color: #F3E96B;
 }
 
 .topnav a {
@@ -37,12 +52,12 @@
 }
 
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: #F3E96B;
+  color: #6975A6;
 }
 
 .active {
-  background-color: orangered;
+  background-color: #6465A5;
   color: black;
 }
 
@@ -58,7 +73,7 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
@@ -70,7 +85,23 @@
     display: block;
     text-align: left;
   }
+  .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+ .row.content {height:auto;} 
 }
+.row.content {height: 450px}
+.sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+footer {
+      background-color:#6465A5;
+      color: #F28A30;
+      padding: 15px;
+    }
 </style>
 </head>
 <body>
@@ -81,7 +112,68 @@
         <a href="#about">About</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
-    </body>
+    <div class="container-fluid text-center">    
+        <div class="row content">
+          <div class="col-sm-2 sidenav"><!--add a search field and output diplay-->
+            <p><a href="#">Link</a></p>
+            <p><a href="#">Link</a></p>
+            <p><a href="#">Link</a></p>
+          </div>
+          <div class="col-sm-8 text-left"> 
+            <h1>Categories</h1>
+            </br>
+            <div class="container">
+                <div class="row">
+                  <div class="col-sm-3 resize"><img src="img/biography.png"/></div>
+                  <div class="col-sm-3 resize"><img src="img/fantasy.png"/></div>
+                  <div class="col-sm-3 resize"><img src="img/graphic-novel.jpg"/></div>
+                  <div class="col-sm-3 resize"><img src="img/historical-fiction.jpg"/></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3 resize"><img src="img/mystery.jpg"/></div>
+                    <div class="col-sm-3 resize"><img src="img/nonfiction.png"/></div>
+                    <div class="col-sm-3 resize"><img src="img/novel.jpg"/></div>
+                    <div class="col-sm-3 resize"><img src="img/poetry.jpg"/></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3 resize"><img src="img/romance.jpg"/></div>
+                    <div class="col-sm-3 resize"><img src="img/science-fiction.jpg"/></div>
+                    <div class="col-sm-3 resize"><img src="img/texbook.png"/></div>
+                    <div class="col-sm-3 resize"><img src="img/Thriller.png"/></div>
+                </div>
+                
+          </div>
+        </div>
+      </div>
+      
+    <!--<div class="container">
+      <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-3"></div>
+        <div class="col-sm-3"></div>
+        <div class="col-sm-3"></div>
+      </div>
+      <div class="row">
+          <div class="col-sm-3"></div>
+          <div class="col-sm-3"></div>
+          <div class="col-sm-3"></div>
+          <div class="col-sm-3"></div>
+      </div>
+      <div class="row">
+          <div class="col-sm-3"></div>
+          <div class="col-sm-3"></div>
+          <div class="col-sm-3"></div>
+          <div class="col-sm-3"></div>
+      </div>
+      <div class="row">
+          <div class="col-sm-3"></div>
+          <div class="col-sm-3"></div>
+          <div class="col-sm-3"></div>
+          <div class="col-sm-3"></div>
+      </div>
+    </div> -->
+    
+  </body>
 </html>
 
               
