@@ -9,24 +9,24 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script>
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+            } 
+        else {
                 x.className = "topnav";
             }
         }
-        </script>
+</script>
 <style>
-    body {font-family: Arial, Helvetica, sans-serif;}
-}    
+    body {font-family: Arial, Helvetica, sans-serif;
+      background-color: #72A2C0}    
 .topnav {
   overflow: hidden;
-  background-color:#F05837;
+  background-color: #1d65a6;;
 }
 
-}
 
 .topnav a {
   float: left;
@@ -39,12 +39,12 @@
 }
 
 .topnav a:hover {
-  background-color: #F3E96B;
-  color: #6975A6;
+  background-color: #00743F;
+  color: #F2A104;
 }
 
 .active {
-  background-color: #6465A5;
+  background-color: #192E5B;
   color: black;
 }
 
@@ -75,7 +75,7 @@
  
 }
 
-    }
+  
 </style>
 </head>
 <body>
@@ -86,7 +86,30 @@
         <a href="#about">About</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
-   
+   <div class="container">
+     <div class="row">
+        <div class="col-sm-6">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="well well-lg">Input book you want to borrow</div>
+            </div>
+            <div class="col-sm-6">
+              <p>Search icon on a styled button:
+                <button type="button" class="btn btn-info">
+                <span class="glyphicon glyphicon-search"></span> Search
+                </button>
+              </p>
+            </div>
+          </div>
+          <div class="row">
+          </div>
+          <div class="row"></div>
+       </div>
+      </div>
+       <div class="col-sm-6"></div>
+     </div>
+   </div>
+    
        
   </body>
 </html>
