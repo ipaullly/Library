@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Enter Login Details</title>
+    <title>View All Books</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -9,30 +9,19 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script>
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
+  function myFunction() {
+   var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+            x.className += " responsive";
             } else {
                 x.className = "topnav";
-            }
+              }
         }
-        </script>
+</script>
 <style>
-    body {font-family: Arial, Helvetica, sans-serif;}
-.resize {
-    width: 200px;
-    height: 120px;
-}
+    body {font-family: Helvetica, sans-serif;}
 
-/* resize images */
-.resize img {
-    width: 100%;
-    height: auto;
-    padding: 25px;
-    margin: 10px;
-
-}    
+  
 .topnav {
   overflow: hidden;
   background-color:#F05837;
@@ -52,8 +41,8 @@
 }
 
 .topnav a:hover {
-  background-color: #F3E96B;
-  color: #6975A6;
+  background-color:#6975A6;
+  color:#F3E96B;
 }
 
 .active {
@@ -97,11 +86,20 @@
       background-color: #f1f1f1;
       height: 100%;
     }
-footer {
-      background-color:#6465A5;
-      color: #F28A30;
-      padding: 15px;
+.img {
+      height: 100%;
+      width: 100%;
+       object-fit: contain; 
     }
+#image1{
+  background: url("path");
+  background-size:cover;
+}
+
+.thumbnail{
+   width:200px;
+   height:200px;
+}
 </style>
 </head>
 <body>
@@ -115,32 +113,154 @@ footer {
     <div class="container-fluid text-center">    
         <div class="row content">
           <div class="col-sm-2 sidenav"><!--add a search field and output diplay-->
-            <p><a href="#">Link</a></p>
-            <p><a href="#">Link</a></p>
-            <p><a href="#">Link</a></p>
+          
+               <div class="container-width" style="background-color:#7975b7">
+                  
+                      
+                <input type="text" placeholder="Search..">
+             
+                <button type="button" class="btn btn-default">
+                  <span class="glyphicon glyphicon-search"></span> Search
+                </button>
+              </div>
           </div>
-          <div class="col-sm-8 text-left"> 
-            <h1>Categories</h1>
+          <div class="col-sm-8"> 
+           
+            <div class="container" style="background-color:#F3E96B">
+                <div class="page-header"><h2>Category</h2></div>
             </br>
-            <div class="container">
-                <div class="row">
-                  <div class="col-sm-3 resize"><img src="img/biography.png"/></div>
-                  <div class="col-sm-3 resize"><img src="img/fantasy.png"/></div>
-                  <div class="col-sm-3 resize"><img src="img/graphic-novel.jpg"/></div>
-                  <div class="col-sm-3 resize"><img src="img/historical-fiction.jpg"/></div>
+              <p>The following are the major catheories of the books available on Hello-books web application</p>
+              
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="thumbnail img-responsive">
+                    
+                    <a href="#" target="_blank">
+                      <img src="img/biography.png" alt="Lights"><!--get a better picture that fits-->
+                  
+                      <div class="caption">
+                        <p>Biography books</p>
+                      </div>
+                    </a>
+                  </div>
                 </div>
-                <div class="row">
-                    <div class="col-sm-3 resize"><img src="img/mystery.jpg"/></div>
-                    <div class="col-sm-3 resize"><img src="img/nonfiction.png"/></div>
-                    <div class="col-sm-3 resize"><img src="img/novel.jpg"/></div>
-                    <div class="col-sm-3 resize"><img src="img/poetry.jpg"/></div>
+                <div class="col-md-3">
+                  <div class="thumbnail">
+                    <a href="#" target="_blank">
+                      <img src="img/fantasy.jpg" alt="Nature">
+                      <div class="caption">
+                        <p>fantasy</p>
+                      </div>
+                    </a>
+                  </div>
                 </div>
-                <div class="row">
-                    <div class="col-sm-3 resize"><img src="img/romance.jpg"/></div>
-                    <div class="col-sm-3 resize"><img src="img/science-fiction.jpg"/></div>
-                    <div class="col-sm-3 resize"><img src="img/texbook.png"/></div>
-                    <div class="col-sm-3 resize"><img src="img/Thriller.png"/></div>
+                <div class="col-md-3">
+                  <div class="thumbnail">
+                    <a href="#" target="_blank">
+                      <img src="img/graphic-novel.jpg" alt="Fjords">
+                      <div class="caption">
+                        <p>Graphic Novels</p>
+                      </div>
+                    </a>
+                  </div>
                 </div>
+                <div class="col-md-3">
+                  <div class="thumbnail">
+                    <a href="#" target="_blank">
+                      <img src="img/historical-fiction.jpg" alt="Fjords">
+                      <div class="caption">
+                        <p>Historical fiction</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="thumbnail">
+                    <a href="#" target="_blank">
+                      <img src="img/mystery.jpg" alt="Lights">
+                      <div class="caption">
+                        <p>Mystery books</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="thumbnail">
+                    <a href="#" target="_blank">
+                      <img src="img/nonfiction.png" alt="Nature">
+                      <div class="caption">
+                        <p>non-fiction</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="thumbnail">
+                    <a href="#" target="_blank">
+                      <img src="img/novel.jpg" alt="Fjords">
+                      <div class="caption">
+                        <p>Novel</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="thumbnail">
+                    <a href="#" target="_blank">
+                      <img src="img/poetry.jpg" alt="Fjords">
+                      <div class="caption">
+                        <p>Poetry</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="thumbnail">
+                    <a href="#" target="_blank">
+                      <img src="img/romance.jpg" alt="Lights">
+                      <div class="caption">
+                        <p>Romance books</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="thumbnail">
+                    <a href="#" target="_blank">
+                      <img src="img/science-fiction.jpg" alt="Nature">
+                      <div class="caption">
+                        <p>science fiction</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="thumbnail">
+                    <a href="#" target="_blank">
+                      <img src="img/texbook.png" alt="Fjords"><!--get a better image that is more responsive-->
+                      <div class="caption">
+                        <p>Textbooks</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="thumbnail">
+                    <a href="#" target="_blank">
+                      <img src="img/Thriller.png" alt="Fjords">
+                      <div class="caption">
+                        <p>Thriller</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
                 
           </div>
         </div>
