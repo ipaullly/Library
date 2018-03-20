@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile page</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+  function myFunction() {
+   var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+            x.className += " responsive";
+            } else {
+                x.className = "topnav";
+              }
+        }
+</script>
+<style>
+    body {font-family: Helvetica, sans-serif;}
+
+  
+.topnav {
+  overflow: hidden;
+  background-color:#BE302B;
+}
+
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color:#F07995;
+  color:#F3F1F3;
+}
+
+.active {
+  background-color:#A58E87;
+  color: black;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+}
+footer {
+  background: #BE302B;
+  color: #eee;
+  font-size: 11px;
+  padding: 20px;
+} /* this footer styling affects layout*/
+ul.unstyled {
+  list-style: none;
+  padding: 0;
+}
+
+</style>
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#news">View Books</a>
+        <a href="#contact">Borrow book</a>
+        <a href="#">Borrowing History</a>
+        <a href="#profile">Profile</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+   
+   
+   
+   
+   
+     <footer>
+       <div class="container">
+        <div class="row">
+          <div class="col-sm-2">
+            <h6>Copyright &copy; 2018 Ipaullly</h6>
+          </div><!--end of col-sm-2 -->
+          <div class="col-sm-4">
+            <h6>About Us</h6>
+            <p>at this site, you can access every book imaginable except those lost at Yucatan, House of Wisdom in Baghdad and the ancient library at Alexandria</p>
+          </div><!--end of col-sm-2 -->
+          <div class="col-sm-2">
+            <ul class="unstyled">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Contacts</a></li>
+              <li><a href="#">Services</a></li>
+            </ul>
+          </div><!--end of col-sm-2 -->
+          <div class="col-sm-2">
+            <h6>Coded with<span class="glyphicon glyphicon-heart"></span> by Paul</h6>
+          </div><!--end of col-sm-2 -->
+        </div><!--end of the row-->
+       </div><!--end of container-->
+     </footer>
+  </body>
+</html>
+
+              
+             
