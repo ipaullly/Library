@@ -24,11 +24,9 @@
   
 .topnav {
   overflow: hidden;
-  background-color:#F05837;
+  background-color:#BE302B;
 }
-.splash {
-  background-color: #F3E96B;
-}
+
 
 .topnav a {
   float: left;
@@ -41,12 +39,12 @@
 }
 
 .topnav a:hover {
-  background-color:#6975A6;
-  color:#F3E96B;
+  background-color:#F07995;
+  color:#F3F1F3;
 }
 
 .active {
-  background-color: #6465A5;
+  background-color:#A58E87;
   color: black;
 }
 
@@ -76,6 +74,16 @@
   }
   
 }
+footer {
+  background: #BE302B;
+  color: #eee;
+  font-size: 11px;
+  padding: 20px;
+} /* this footer styling affects layout*/
+ul.unstyled {
+  list-style: none;
+  padding: 0;
+}
 
 </style>
 </head>
@@ -88,10 +96,48 @@
         <a href="#profile">Profile</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
-    <div class="container-fluid text-center">    
-        
-       
+    <div class="container">    
+        <div class="list-group">
+            <a href="#" class="list-group-item active">
+              Harry Potter and the Cohort 26
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">Moby dick</a>
+            <a href="#" class="list-group-item list-group-item-action">Stormland Archives</a>
+            <a href="#" class="list-group-item list-group-item-action">War of Roses</a>
+            <a href="#" class="list-group-item list-group-item-action ">Mein Kampf</a>
+            <a href="#" class="list-group-item list-group-item-action">The league of extraordinary gentelemen</a>
+            <a href="#" class="list-group-item list-group-item-action">The Rise of Rome</a>
+            <a href="#" class="list-group-item list-group-item-action">Donecius King of Ruine</a>
+            <a href="#" class="list-group-item list-group-item-action">Carthage the foederati</a>
+            <a href="#" class="list-group-item list-group-item-action">Vandals in the Strait</a>
+            <a href="#" class="list-group-item list-group-item-action">House of Cards</a>
+            <a href="#" class="list-group-item list-group-item-action">In the house</a>
+            <a href="#" class="list-group-item list-group-item-action">Dragons in the middle ages</a>
+          </div>
       </div>
+     <footer>
+       <div class="container">
+        <div class="row">
+          <div class="col-sm-2">
+            <h6>Copyright &copy; 2018 Ipaullly</h6>
+          </div><!--end of col-sm-2 -->
+          <div class="col-sm-4">
+            <h6>About Us</h6>
+            <p>at this site, you can access every book imaginable except those lost at Yucatan, House of Wisdom in Baghdad and the ancient library at Alexandria</p>
+          </div><!--end of col-sm-2 -->
+          <div class="col-sm-2">
+            <ul class="unstyled">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Contacts</a></li>
+              <li><a href="#">Services</a></li>
+            </ul>
+          </div><!--end of col-sm-2 -->
+          <div class="col-sm-2">
+            <h6>Coded with<span class="glyphicon glyphicon-heart"></span> by Paul</h6>
+          </div><!--end of col-sm-2 -->
+        </div><!--end of the row-->
+       </div><!--end of container-->
+     </footer>
   </body>
 </html>
 
