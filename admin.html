@@ -12,10 +12,84 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/footer.css">
+    <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                  x.className += " responsive";
+                      } 
+                  else {
+                          x.className = "topnav";
+                      }
+                  }
+            /*function to ensure the navigation bar resizes on mobile devices*/
+            
+            
+
+          </script>
 </head>
 <style>
-     /* add footer styling for layout*/
-    footer {
+     body {font-family: Arial, Helvetica, sans-serif;
+      background-color: #561E18}    
+/*layout for the nav bar and necessary css-styling for the bootstrap classes*/
+      .topnav {
+  overflow: hidden;
+  background-color: #594346;
+}
+
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #F22F08;
+  color:#8D2F23;
+}
+
+.active {
+  background-color: #212027;
+  color: black;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .card {
+    padding: 20px 0 20px 0;
+  }
+  
+    } 
+       /* add footer styling for layout*/
+       footer {
       background: darkred;
       color:#FFF;
       font-size: 11px;
@@ -25,328 +99,127 @@
       list-style: none;
       padding: 0;
       }
-       /* end of footer css*/
-      
+       /* end of footer css*/ 
 </style>
 <body>
     <!-- Top navbar header section -->
-    <header class="container-fluid">
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="library.html">Books</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="mx-auto order-0">
-                <a class="navbar-brand mx-auto" href="#">Hello~Books</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
-                                                                <span class="navbar-toggler-icon"></span>
-                                    </button>
-            </div>
-            <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="admin.html">Admin</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="profile.html">Profile</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="history.html">My History</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Logout</a>
-                    </li>
-                </ul>
-            </div>
-                </nav>
-    </header>
-
-    <div class="container adminTable jumbotron">
-
-        <!--Top Table UI-->
-        <div class="card p-2 mb-5">
-
-            <!--Grid row-->
-            <div class="row">
-
-                <!--Grid column-->
-                <div class="col-lg-3 col-md-12 col-sm-4">
-
-                    <!--Name-->
-                    <select class="mdb-select colorful-select dropdown-primary mx-2">
-                    <option value="" disabled selected>Bulk actions</option>
-                    <option value="1">Delete Book</option>
-                    <option value="2">Add Book</option>
-                    <option value="3">Edit Book</option>
-                </select>
-
-                </div>
-                <!--Grid column-->
-                <!--Grid column-->
-                <div class="col-lg-3 col-md-6">
-
-                    <!--Blue select-->
-                    <select class="mdb-select colorful-select dropdown-primary mx-2">
-                    <option value="" disabled selected>Show only</option>
-                    <option value="1">All Books</option>
-                    <option value="2">Never Returned</option>
-                    <option value="2">Out of stock</option>
-                </select>
-                    <!--/Blue select-->
-                </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-lg-3 col-md-6">
-
-                    <!--Blue select-->
-                    <select class="mdb-select colorful-select dropdown-primary mx-2">
-                    <option value="" disabled selected>Filter segments</option>
-                    <option value="1">Software Engineering Books</option>
-                    <option value="2">Biographies & Memoirs</option>
-                    <option value="3">Most Popular Hello-Books</option>
-                </select>
-                    <!--/Blue select-->
-
-                </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-lg-3 col-md-6">
-
-                    <form class="form-inline mt-2 ml-2">
-                        <input class="form-control my-0 py-0" type="text" placeholder="Search" style="max-width: 150px;">
-                        <button class="btn btn-sm btn-primary ml-2 px-1"><i class="fa fa-search"></i>  </button>
-                    </form>
-
-                </div>
-                <!--Grid column-->
-
-            </div>
-            <!--Grid row-->
-
+    <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">Home</a>
+            <a href="#news">View Books</a>
+            <a href="#contact">Borrow book</a>
+            <a href="#about">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </div>
-                <!--Top Table UI-->
-        <div class="card card-cascade narrower">
+        <!-- end of nav bar-->
 
-            <!--Card image-->
-            <div class="view gradient-card-header blue-gradient narrower py-2 mx-4 mb-3 d-flex justify-content-between align-items-center">
-                <div>
-                    <h6>Admin Table</h6> 
-                               </div>
+        <div class="container">
+    
+          <div class="row">
+          
+                
+                    <div class="card-deck-wrapper">
+                        <div class="card-deck">
+                          <div class="card">
+                            <img class="card-img-top" src="img/fantasy.jpg" alt="Card image">
+                            <div class="card-block" style="padding:20px 0 0 20px">
+                              <h4 class="card-title ">Add Book</h4>
+                              </hr>
+                              <p class="card-text">
+                                Enter Book Title    
+                                <input type="text" class="form-control" id="inputBook" aria-describedby="emailHelp" placeholder="--title--"> 
+                                
+                              </p>
+                              <button type="submit" class="btn btn-primary text-center">Add</button>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <img class="card-img-top" src="img/poetry.jpg" alt="Card image cap">
+                            <div class="card-block" style="padding:20px 0 0 20px">
+                              <h4 class="card-title">Update Book Information</h4>
+                                 <p class="card-text">
+                                  <div class="input-group input-group-lg">
+                                      <form>
+                                          <div class="form-group">
+                                            <label for="inputBook">Enter book title:</label>
+                                            <input type="text" class="form-control" id="inputBook" aria-describedby="emailHelp" placeholder="--title--">
+                                            <small id="emailHelp" class="form-text text-muted">You can also search by author</small>
+                                          </div>
+                                          <div class="form-group">
+                                            <label for="inputChanges">Changes you want to add</label>
+                                            <input type="text" class="form-control" id="inputChanges" placeholder="--changes--">
+                                          </div>
+                                          
+                                          <button type="submit" class="btn btn-primary text-center">Add Changes</button>
+                                        </form>  
 
+                                    </div>
+                                 </p>
+                              
+                            </div>
+                          </div>
+                          <div class="card">
+                            <img class="card-img-top" src="img/romance.jpg" alt="Card image cap">
+                            <div class="card-block" style="padding:20px 0 0 20px">
+                              <h4 class="card-title">Delete book</h4>
+                              <p class="card-text"></p>
+                              <div class="input-group input-group-lg">
+                                  <form>
+                                      <div class="form-group">
+                                        <label for="inputBook">Enter book title:</label>
+                                        <input type="text" class="form-control" id="inputBook" aria-describedby="emailHelp" placeholder="--title--">
+                                       
+                                      </div>
+                                     
+                                      
+                                      <button type="submit" class="btn btn-hazard text-center">Delete</button>
+                                    </form>  
 
-                <a href="" class="white-text mx-3">Hello~Books Library</a>
-
-                <div>
-                    <button type="button" class="btn btn-outline-white btn-rounded btn-sm px-2"><i class="fa fa-pencil mt-0"></i></button>
-                    <button type="button" class="btn btn-outline-white btn-rounded btn-sm px-2"><i class="fa fa-remove mt-0"></i></button>
-                    <button type="button" class="btn btn-outline-white btn-rounded btn-sm px-2"><i class="fa fa-info-circle mt-0"></i></button>
-                </div>
-
-            </div>
-
- 
-              <!--/Card image-->
-
-            <div class="px-4">
-
-                <div class="table-wrapper">
-                    <!--Table-->
-                    <table class="table table-hover mb-0 w-auto">
-
-                        <!--Table head-->
-                        <thead>
-                            <tr>
-                                <th></th>
-                                <th class="th-lg"><a>Image</a></th>
-                                <th class="th-lg"><a href="">ISBN<i class="fa fa-sort ml-1"></i></a></th>
-                                <th class="th-lg"><a href="">Title<i class="fa fa-sort ml-1"></i></a></th>
-                                <th class="th-lg"><a href="">Author<i class="fa fa-sort ml-1"></i></a></th>
-                                <th class="th-lg"><a href="">Date Published<i class="fa fa-sort ml-1"></i></a></th>
-                                <th class="th-lg"><a href="">Category<i class="fa fa-sort ml-1"></i></a></th>
-                            </tr>
-                        </thead>
-                        <!--Table head-->
-
-                        <!--Table body-->
-                        <tbody class="senta">
-                            <tr>
-                                <th scope="row">
-                                    <input type="checkbox" id="checkbox1">
-                                    <label for="checkbox1" class="label-table"></label>
-                                </th>
-                                <td><img src="../images/bk1.jpg" alt="" border="3" height="50" width="50"></td>
-                                <td>00001</td>
-                                <td>CLEAN CODE</td>
-                                <td>Robert C. Martin</td>
-                                <td>01/02/2040</td>
-
-                                <td>COMPUTER SCIENCE</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">
-                                      <input type="checkbox" id="checkbox2">
-                              <label for="checkbox2" class="label-table"></label>
-                                </th>
-                                <td><img src="../images/bk8.jpg" alt="" border="3" height="50" width="50"></td>
-                                <td>00002</td>
-                                <td>Dreams From My Father</td>
-                                <td>BARRACK OBAMA</td>
-                                <td>01/02/2040</td>
-                                <td>GOOD READS</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">
-                                    <input type="checkbox" id="checkbox3">
-                                    <label for="checkbox3" class="label-table"></label>
-                                </th>
-                                <td><img src="../images/bk12.jpg" alt="" border="3" height="50" width="50"></td>
-                                <td>00003</td>
-                                <td>MacBeth</td>
-                                <td>WILLIAM SHAKESPEAR</td>
-                                <td>01/02/2040</td>
-                                <td>GOOD READS</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">
-                                    <input type="checkbox" id="checkbox4">
-                                    <label for="checkbox4" class="label-table"></label>
-                                </th>
-                                <td><img src="../images/bk4.jpg" alt="" border="3" height="50" width="50"></td>
-                                <td>00004</td>
-                                <td>FIRE AND FURY</td>
-                                <td>MICHAEL WOLFF</td>
-                                <td>01/02/2040</td>
-                                <td>BIOGRAPHIES</td>
-                            </tr>
-
-                            <tr>
-                                <th scope="row">
-                                    <input type="checkbox" id="checkbox5">
-                                    <label for="checkbox5" class="label-table"></label>
-                                </th>
-                                <td><img src="../images/bk1.jpg" alt="" border="3" height="50" width="50"></td>
-                                <td>00005</td>
-                                <td>LONG WALK TO FREEDOM</td>
-                                <td>NELSON MANDELA</td>
-                                <td>01/02/2040</td>
-                                <td>GOOD READS</td>
-                            </tr>
-                        </tbody>
-                        <!--Table body-->
-                    </table>
-                    <!--Table-->
-                </div>
-
-                <hr class="my-0">
-
-                <!--Bottom Table UI-->
-                <div class="d-flex justify-content-between">
-
-                    <!--Name-->
-                    <select class="mdb-select colorful-select dropdown-primary mt-2 hidden-md-down">+                    <option value="" disabled >Rows number</option>
-                   <option value="1" selected>10 rows</option>
-                    <option value="2">25 rows</option>
-                    <option value="3">50 rows</option>
-                    <option value="4">100 rows</option>
-                </select>
-
-                    <!--Pagination -->
-                    <nav class="my-4">
-                        <ul class="pagination pagination-circle pg-blue mb-0">
-
-                            <!--First-->
-                            <li class="page-item disabled"><a class="page-link">First</a></li>
-
-                            <!--Arrow left-->
-                            <li class="page-item disabled">
-                                <a class="page-link" aria-label="Previous">
-                                    <span aria-hidden="true">&laquo;</span>
-                                    <span class="sr-only">Previous</span>
-                                </a>
-                            </li>
-
-                            <!--Numbers-->
-                            <li class="page-item active"><a class="page-link">1</a></li>
-                            <li class="page-item"><a class="page-link">2</a></li>
-
-                            <!--Arrow right-->
-                            <li class="page-item">
-                                <a class="page-link" aria-label="Next">
-                                    <span aria-hidden="true">&raquo;</span>
-                                    <span class="sr-only">Next</span>
-                                </a>
-                            </li>
-
-                            <!--First-->
-                            <li class="page-item"><a class="page-link">Last</a></li>
-
-                        </ul>
-                    </nav>
-                    <!--/Pagination -->
-
-                </div>
-                <!--Bottom Table UI-->
-
-            </div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+          </div>
         </div>
 
-    </div>
 
     <!-- footer section -->
     <div id="footer">
-        <footer class="container-fluid w-100 bg-dark text-light py-3">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <h5><i class="fa fa-book"></i> Hello~Books</h5>
-                        <hr>
-                        <p class="list-unstyled">
-                            <a href="index.html">Home</a>
-                            <a href="profile.html">Profile</a>
-                            <a href="">Books</a>
-                            <p>Connect with us</p>
-                        </p>
-                        <ul class="nav">
-                            <li class="nav-item"><a href="" class="nav-link pl-0"><i class="fa fa-facebook fa-lg"></i></a></li>
-                            <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-twitter fa-lg"></i></a></li>
-                            <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-github fa-lg"></i></a></li>
-                            <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-instagram fa-lg"></i></a></li>
-                        </ul>
-                        <br>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="container">
-                            <h5 class="text-md-center">Hello~Books enables users to find</h5>
-                            <h5 class="text-md-center">and rent books.</h5>
-                            <hr>
-                            <ul>
-                                <i class="fa fa-building-o"> <span>Andela offices, Thika Road.</span></i>
-                                <i class="fa fa-clock-o"> <span>Serving from Monday to Friday.</span></i>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <h5 class="text-md-center">Copyright &copy; 2018 Emmanuel Michira</h5>
-                        <h5 class="text-md-center">Andela</h5>
-                        <hr>
-                    </div>
-                </div>
-            </div>
-        </footer>
+      <footer>
+       <div class="container">
+         <div class="row">
+           <div class="col-sm-4">
+              <div class="row"> <!--partion the column into two rows. this is the first-->
+                <h6>Copyright &copy; 2018 Ipaullly</h6>
+                 </hr>
+                  <h6>About Us</h6>
+                            </hr>
+                          </div><!--end of first row-->
+                          <div class="row"><!--partion the column into two rows. this is the second-->
+                            <ul class="nav"><!--the nav bar for the social media icons and links-->
+                              <div class="col-sm-3"><li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-facebook fa-lg"></i></a></li></div>
+                              <div class="col-sm-3"><li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-twitter fa-lg"></i></a></li></div>
+                              <div class="col-sm-3"><li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-github fa-lg"></i></a></li></div>
+                              <div class="col-sm-3"><li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-instagram fa-lg"></i></a></li></div>
+                        </ul></div><!--end of second row-->
+                       </div><!--end of col-sm-2 -->
+                       <div class="col-sm-4">
+                         <ul class="unstyled">
+                           <li><a href="#">Home</a></li>
+                           <li><a href="#">Contacts</a></li>
+                           <li><a href="#">Services</a></li>
+                         </ul>
+                       </div><!--end of col-sm-2 -->
+                       <div class="col-sm-4">
+                         <h6>Coded by Paul</h6>
+                       </div><!--end of col-sm-2 -->
+                     </div><!--end of the row-->
+                    </div><!--end of container-->
+                  </footer>
+
     </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</body>
+    <!--add javascript to make nav bar responsive-->
+   
+    </body>
 
 </html>
