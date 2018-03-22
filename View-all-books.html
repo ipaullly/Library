@@ -18,9 +18,9 @@
               }
         }
 </script>
- <link rel="stylesheet" href="styles.css">
+ <link rel="stylesheet" href="View-all-books.css">
 </head>
-<body>
+<body><div class="container-width">
     <div class="topnav" id="myTopnav">
         <a href="#home" class="active">Home</a>
         <a href="#news">View Books</a>
@@ -28,19 +28,21 @@
         <a href="#about">About</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
+    </div>
     <div class="container-fluid text-center">    
-        <div class="row content">
-          <div class="col-sm-2 sidenav"><!--add a search field and output diplay-->
+        <div class="row">
+          <div class="col-sm-4 sidenav"><!--add a search field and output diplay-->
           
-               <div class="container-width" style="background-color:#7975b7">
-                  
-                      
+               <div class="container-width">
+                <div class="row text-center">      
                 <input type="text" placeholder="Search..">
-             
-                <button type="button" class="btn btn-default">
+                  <button type="button" class="btn btn-default">
                   <span class="glyphicon glyphicon-search"></span> Search
                 </button>
+                <!--add cards for search field output-->
+
               </div>
+            </div>
           </div>
           <div class="col-sm-8"> 
            
@@ -51,17 +53,16 @@
               
               <div class="row">
                 <div class="col-md-3">
-                  <div class="thumbnail img-responsive">
-                    
+                  <div class="thumbnail">
                     <a href="#" target="_blank">
-                      <img src="img/biography.png" alt="Lights"><!--get a better picture that fits-->
-                  
+                      <img src="img/" alt="Nature">
                       <div class="caption">
-                        <p>Biography books</p>
+                        <p>biography</p>
                       </div>
                     </a>
                   </div>
                 </div>
+
                 <div class="col-md-3">
                   <div class="thumbnail">
                     <a href="#" target="_blank">
@@ -159,7 +160,7 @@
                 <div class="col-md-3">
                   <div class="thumbnail">
                     <a href="#" target="_blank">
-                      <img src="img/texbook.png" alt="Fjords"><!--get a better image that is more responsive-->
+                      <img src="img/" alt="Fjords"><!--get a better image that is more responsive-->
                       <div class="caption">
                         <p>Textbooks</p>
                       </div>
@@ -182,7 +183,29 @@
           </div>
         </div>
       </div>
-      
+      <footer>
+        <div class="container">
+         <div class="row">
+           <div class="col-sm-2">
+             <h6>Copyright &copy; 2018 Ipaullly</h6>
+           </div><!--end of col-sm-2 -->
+           <div class="col-sm-4">
+             <h6>About Us</h6>
+             <p>at this site, you can access every book imaginable except those lost at Yucatan, House of Wisdom in Baghdad and the ancient library at Alexandria</p>
+           </div><!--end of col-sm-2 -->
+           <div class="col-sm-2">
+             <ul class="unstyled">
+               <li><a href="#">Home</a></li>
+               <li><a href="#">Contacts</a></li>
+               <li><a href="#">Services</a></li>
+             </ul>
+           </div><!--end of col-sm-2 -->
+           <div class="col-sm-2">
+             <h6>Coded with<span class="glyphicon glyphicon-heart"></span> by Paul</h6>
+           </div><!--end of col-sm-2 -->
+         </div><!--end of the row-->
+        </div><!--end of container-->
+      </footer>  
   </body>
 </html>
 
