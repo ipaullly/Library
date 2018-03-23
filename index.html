@@ -1,108 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+    
 <head>
-  <title>Homepage</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="index.css">
+    <title>Homepage</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif" rel="stylesheet">
+<script>
+  function myFunction() {
+   var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+            x.className += " responsive";
+            } else {
+                x.className = "topnav";
+              }
+        }
+</script>
+<link rel="stylesheet" href="index.css">
 </head>
 <body>
-        <div class="container logobar">
-                <nav class="navbar navbar-default">
-                  <div class="container-fluid">
-                    <div class="navbar-header">
-                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar2">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                      </button>
-                      <a class="navbar-brand" href="#"><img src="img/hellologo.JPG" alt="logo">
-                      </a>
-                    </div>
-                    <div id="navbar2" class="navbar-collapse collapse">
-                      <ul class="nav navbar-nav navbar-right">
-                        <li class="dropdown">
-                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Hello books <span class="caret"></span></a>
-                          <ul class="dropdown-menu" role="menu">
-                            <li><a href="https://ipaullly.github.io/ipaullly.github.io/login.html">Login</a></li>
-                            <li><a href="https://ipaullly.github.io/ipaullly.github.io/Registration.html">Create Account</a></li>
-                            <li><a href="https://ipaullly.github.io/ipaullly.github.io/View-all-books.html">View all books</a></li>
-                            <li><a href="https://ipaullly.github.io/ipaullly.github.io/Borrowing-books.html">Borrow book</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Contact</a></li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </div>
-                    <!--/.nav-collapse -->
-                  </div>
-                  <!--/.container-fluid -->
-                </nav>
-              </div>
-  <!--below is the carousel section of the homepage-->            
-  <div id="carousel" class="carousel slide" data-ride="carousel">
-      <!-- Carousel items -->
-      <div class="carousel-inner">
-          <div class="active item">
-             <div class="carousel-caption">
-              <h1>Hello Books</h1>
-              <p class="lead"></p>
-              <a class="btn btn-primary" href="#">Learn more</a>
-            </div>
-          </div>
-          <div class="item">
-            <div class="carousel-caption">
-              <h1>View Books</h1>
-              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <a class="btn btn-primary" href="#">All books</a>
-            </div>
-          </div>
-          <div class="item">
-            <div class="carousel-caption">
-              <h1>Acccount</h1>
-              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <a class="btn btn-primary" href="#">login</a>
-              <a class="btn btn-primary" href="#">Create Account</a>
-            </div>
-          </div>
-          <div class="item">
-            <div class="carousel-caption">
-              <h1>New Releases</h1>
-              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <a class="btn btn-primary" href="#">Learn more</a>
-            </div>
-          </div>
-        </div>
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Hello-books</a>
+        <a href="#news">Login</a>
+        <a href="#news">Create account</a>
+        <a href="#news">View Books</a>
+        
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
-  <!--below is the footer template standard throughout the website-->
-  <footer>
-    <div class="container">
-     <div class="row">
-       <div class="col-sm-2">
-         <h6>Copyright &copy; 2018 Ipaullly</h6>
-       </div><!--end of col-sm-2 -->
-       <div class="col-sm-4">
-         <h6>About Us</h6>
-         <p>at this site, you can access every book imaginable except those lost at Yucatan, House of Wisdom in Baghdad and the ancient library at Alexandria</p>
-       </div><!--end of col-sm-2 -->
-       <div class="col-sm-2">
-         <ul class="unstyled">
-           <li><a href="#">Home</a></li>
-           <li><a href="#">Contacts</a></li>
-           <li><a href="#">Services</a></li>
-         </ul>
-       </div><!--end of col-sm-2 -->
-       <div class="col-sm-2">
-         <h6>Coded with<span class="glyphicon glyphicon-heart"></span> by Paul</h6>
-       </div><!--end of col-sm-2 -->
-     </div><!--end of the row-->
-    </div><!--end of container-->
-  </footer>
-</body>
+    <div class="text">
+          <div class="page-header text-center">
+              <h3>Hello Books Online library</h3>  
+              </div> 
+              <div class="row text-center"><img src="img/logo.jpg"/></div>
+            <div class="row"
+              <div class="jumbotron jumbotron-fluid">
+                  <div class="container">
+                    <h1 class="display-4">What is Hello-books?</h1>
+                    <p class="lead">This is an online haven for countless publications on many categories and written by accomplished writers</p>
+                  </div>
+                </div>
+
+              </div>
+              <div class="row"
+              <div class="jumbotron jumbotron-fluid">
+                  <div class="container">
+                    <h1 class="display-4">How it works</h1>
+                    <p class="lead">Simply login to your account or create a new one to be able to borrow, read and return books. Benefits of having an account also include keeping track of your reading progress and accessing the latest releases in the literary world </p>
+                  </div>
+                </div>
+              </div>
+              </div>
+           <div class="container-fluid">
+            <footer>
+             <div class="container">
+              <div class="row">
+                <div class="col-sm-2">
+                  <h6>Copyright &copy; 2018 Ipaullly</h6>
+                </div><!--end of col-sm-2 -->
+                <div class="col-sm-4">
+                  <h6>About Us</h6>
+                  <p>at this site, you can access every book imaginable except those lost at Yucatan, House of Wisdom in Baghdad and the ancient library at Alexandria</p>
+                </div><!--end of col-sm-2 -->
+                <div class="col-sm-2">
+                  <ul class="unstyled">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#">Services</a></li>
+                  </ul>
+                </div><!--end of col-sm-2 -->
+                <div class="col-sm-2">
+                  <h6>Coded with<span class="glyphicon glyphicon-heart"></span> by Paul</h6>
+                </div><!--end of col-sm-2 -->
+              </div><!--end of the row-->
+             </div><!--end of container-->
+           </footer>
+          </div>
+  </body>
 </html>
+
+              
+             

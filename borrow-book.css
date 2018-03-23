@@ -1,9 +1,8 @@
 body {font-family: 'IBM Plex Serif', serif;
-  background-color: blanchedalmond }    
-/*layout for the nav bar and necessary css-styling for the bootstrap classes*/
-    .topnav {
+    background-color: #72A2C0}    
+.topnav {
 overflow: hidden;
-background-color: #594346;
+background-color: #1d65a6;;
 }
 
 
@@ -18,12 +17,12 @@ font-size: 17px;
 }
 
 .topnav a:hover {
-background-color: #F22F08;
-color:#8D2F23;
+background-color: #00743F;
+color: #F2A104;
 }
 
 .active {
-background-color: #212027;
+background-color: #192E5B;
 color: black;
 }
 
@@ -52,13 +51,9 @@ display: none;
   text-align: left;
 }
 
-.card {
-  padding: 20px 0 20px 0;
 }
-
-  } 
-     /* add footer styling for layout*/
-     footer {
+/* add footer styling for layout*/
+footer {
     background: darkred;
     color:#FFF;
     font-size: 11px;
@@ -68,7 +63,4 @@ display: none;
     list-style: none;
     padding: 0;
     }
-     /* end of footer css*/ 
-     .admin {
-         padding: 20px 0 20px 0;
-     }
+     /* end of footer css*/

@@ -18,74 +18,7 @@
               }
         }
 </script>
-<style>
-    body {font-family: Helvetica, sans-serif;}
-
-  
-.topnav {
-  overflow: hidden;
-  background-color:#D9AC2A;
-}
-
-
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color:#D8d583;
-  color:#270101;
-}
-
-.active {
-  background-color:#720017;
-  color: black;
-}
-
-.topnav .icon {
-  display: none;
-}
-
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  
-}
-footer {
-  background: #D9AC2A;
-  color:#270101;
-  font-size: 11px;
-  padding: 20px;
-} /* this footer styling affects layout*/
-ul.unstyled {
-  list-style: none;
-  padding: 0;
-}
-
-</style>
+ <link rel="stylesheet" href="profile.css">
 </head>
 <body>
     <div class="topnav" id="myTopnav">
@@ -93,13 +26,12 @@ ul.unstyled {
         <a href="#news">View Books</a>
         <a href="#contact">Borrow book</a>
         <a href="#">Borrowing History</a>
-        <a href="#profile">Profile</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-4">
-          <div class="text-center" style="padding:20px 0 20px 0;">
+          <div class="profpic text-center">
       
           <img src="http://via.placeholder.com/350x150" />
           <h2>User's Name</h2>
@@ -115,7 +47,7 @@ ul.unstyled {
                 <!-- Default panel contents -->
                 <div class="panel-heading">Books in your possession</div>
                 <div class="panel-body">
-                  <p>Dapibus ac facilisis inDapibus ac facilisis inDapibus ac facilisis inDapibus ac facilisis inDapibus ac facilisis inDapibus ac facilisis inDapibus ac facilisis inDapibus ac facilisis inDapibus ac facilisis inDapibus ac facilisis inDapibus ac facilisis inDapibus ac facilisis inDapibus ac facilisis inDapibus ac facilisis inDapibus ac facilisis inDapibus ac facilisis inDapibus ac facilisis in</p>
+                  <p>Below are the books you checked out with, you are required to ensure that you return the books in due time</p>
                 </div>
               
                 <!-- List group -->
@@ -129,7 +61,7 @@ ul.unstyled {
                   <li class="list-group-item">Porta ac consectetur ac<input type="button" value="Return Book"style="position: absolute; right: 0;"></li>
                   <li class="list-group-item">Vestibulum at eros<input type="button" value="Return Book"style="position: absolute; right: 0;"></li>
                 </ul>
-              </div>
+             </div>
         </div><!--end of col-md-8-->
       </div><!--end of row-->
     </div><!--end of container-->
