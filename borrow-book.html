@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Borrow book</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif" rel="stylesheet">
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+            } 
+        else {
+                x.className = "topnav";
+            }
+        }
+</script>
+<link rel="stylesheet" href="borrow-book.css">
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#news">View Books</a>
+        <a href="#contact">Borrow book</a>
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    <!-- end of nav bar-->
+  
+  <div class="container">
+    
+    <div class="row" style="margin: 30px 0 0 0;">
+      <div class="col-sm-6">
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+                  <h2 class="display-3 text-center">Choose book</h2>
+                  <div class="card-header">
+                    <form>
+                      <div class="form-group">
+                        <label for="formGroupExampleInput">Search by title:</label>
+                        <input type="text" class="form-control" id="formGroupInput" placeholder="ie Moby Dick">
+                      </div>
+                      <div class="form-group">
+                        <label for="formGroupExampleInput2">Search by Author:</label>
+                        <input type="text" class="form-control" id="formGroupInput2" placeholder="Oliver Wilde">
+                      </div>
+                    </form>
+                              
+                  </div> <!--end of header-->
+                  <div class="card-block">
+                    
+                        
+                </div><!--end of card-->
+        </div><!--end of container-->
+      </div><!--end of jumbotron-->
+
+
+      <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+                  <div class="card-header">
+                  
+                     
+                  </div> <!--end of header-->
+                  <div class="card-block">
+                      <label for="Input2">Select Category:</label>
+                      <select class="custom-select">
+                          <option selected>Choose category</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </br>
+                      <label for="Input2">Select Author:</label>
+                      
+                      <select class="custom-select">
+                          <option selected>Choose Author</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                          <option value="1">four</option>
+                          <option value="2">five</option>
+                          <option value="3">six</option>
+                          <option value="1">seven</option>
+                          <option value="2">eight</option>
+                          <option value="3">nine</option>
+                        </select>
+                                <!--placeholders for author category-->
+
+                </div><!--end of card-->
+        </div><!--end of container-->
+      </div><!--end of jumbotron-->
+
+      </div><!--end of col-sm-6--> 
+      <div class="col-sm-6">
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+            <h1 class="display-3">Book Title</h1>
+              
+             <p class="lead">Lorem ipsum dolor sit amet, ante sapien risus laoreet vivamus mauris ac. Nulla vitae quam odio risus et diam.</p>
+             <div class="card">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Author name</li>
+                  <li class="list-group-item">Genre</li>
+                  <li class="list-group-item">Page count</li>
+                  <li class="list-group-item">Current date</li>
+                  <li class="list-group-item">Due by date</li>
+                </ul>
+              </div>
+              <a href="#" class="btn btn-primary">Borrow Book</a>
+           </div><!--end of container-->
+  
+         </div><!--end of jumbotron-->
+      </div><!--end of col-sm-6-->  
+    </div><!--end of row-->
+  </div><!-- end of overall container-->
+   <footer>
+      <div class="container">
+       <div class="row">
+         <div class="col-sm-4">
+           <div class="row"> <!--partion the column into two rows. this is the first-->
+             <h6>Copyright &copy; 2018 Ipaullly</h6>
+                </hr>
+             <h6>About Us</h6>
+              </hr>
+            </div><!--end of first row-->
+            <div class="row"><!--partion the column into two rows. this is the second-->
+              <ul class="nav"><!--the nav bar for the social media icons and links-->
+                <div class="col-sm-3"><li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-facebook fa-lg"></i></a></li></div>
+                <div class="col-sm-3"><li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-twitter fa-lg"></i></a></li></div>
+                <div class="col-sm-3"><li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-github fa-lg"></i></a></li></div>
+                <div class="col-sm-3"><li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-instagram fa-lg"></i></a></li></div>
+          </ul></div><!--end of second row-->
+         </div><!--end of col-sm-2 -->
+         <div class="col-sm-4">
+           <ul class="unstyled">
+             <li><a href="#">Home</a></li>
+             <li><a href="#">Contacts</a></li>
+             <li><a href="#">Services</a></li>
+           </ul>
+         </div><!--end of col-sm-2 -->
+         <div class="col-sm-4">
+           <h6>Coded with<span class="glyphicon glyphicon-heart"></span> by Paul</h6>
+         </div><!--end of col-sm-2 -->
+       </div><!--end of the row-->
+      </div><!--end of container-->
+    </footer>
+       
+  </body>
+</html>
