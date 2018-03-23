@@ -1,13 +1,12 @@
-body {font-family: Helvetica, sans-serif;}
+body {font-family: Helvetica, sans-serif;
+      background-color:#F4D993;}
 
   
 .topnav {
   overflow: hidden;
-  background-color:#F05837;
+  background-color:#423A01;
 }
-.splash {
-  background-color: #F3E96B;
-}
+
 
 .topnav a {
   float: left;
@@ -20,12 +19,12 @@ body {font-family: Helvetica, sans-serif;}
 }
 
 .topnav a:hover {
-  background-color:#6975A6;
-  color:#F3E96B;
+  background-color:#F4D993;
+  color:#270101;
 }
 
 .active {
-  background-color: #6465A5;
+  background-color:#776B04;
   color: black;
 }
 
@@ -53,35 +52,24 @@ body {font-family: Helvetica, sans-serif;}
     display: block;
     text-align: left;
   }
-  .sidenav {
-        height: auto;
-        padding: 15px;
-      }
- .row.content {height:auto;} 
+  
 }
-.row.content {height: 450px}
-.sidenav {
-      padding-top: 20px;
-      background-color: #f1f1f1;
-      height: 100%;
-    }
-.img {
-      height: 100%;
-      width: 100%;
-       object-fit: contain; 
-    }
-#image1{
-  background: url("path");
-  background-size:cover;
+footer {
+  background:#423A01;
+  color:#F2ece1;
+  font-size: 11px;
+  padding: 20px;
+} /* this footer styling affects layout*/
+ul.unstyled {
+  list-style: none;
+  padding: 0;
 }
-
-.thumbnail{
-   width:200px;
-   height:200px;
+.profpic {
+padding:20px 0 20px 0;
 }
 
 footer {
-    background:#F05837;
+    background:#423A01;
     color:#FFF;
     font-size: 11px;
     padding: 20px;
@@ -91,3 +79,5 @@ footer {
     padding: 0;
     }
     
+
+   
